@@ -7,7 +7,7 @@ Plant it in any PHP file. Totally not *sus*
 $ sudo apt-get install python3-pip
 $ pip3 install requests
 $ sudo apt-get install python3-urllib3
-$ git clone https://github.com/bloos3rpent/bloostealth && cd bloostealth
+$ git clone https://github.com/cybercriminator/Server/tree/main/NinjaMethod && cd NinjaMethod
 ```
 
 ## Disclaimer
@@ -26,7 +26,7 @@ and then
 python3 ninja.py
 ```
 
-Now we can access it by inputting the bloostealth URL in the prompt
+Now we can access it by inputting the NinjaMethod URL in the prompt
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
