@@ -86,18 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['dir'] = __DIR__;
     }
 
-    // IP Loglama
-    $ip = $_SERVER['REMOTE_ADDR'];
-    $request = $_SERVER['REQUEST_URI'];
-    $logData = date('Y-m-d H:i:s') . " - IP: $ip, Request: $request\n";
-    file_put_contents('log.txt', $logData, FILE_APPEND);
 
-    // IP Logunu diğer URL'e gönderme
-    $logReceiverUrl = '/aa.php'; // Log verisinin gönderileceği URL
-    $postData = array(
-        'ip' => $ip,
-        'request' => $request
-    );
     $ch = curl_init($logReceiverUrl);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
